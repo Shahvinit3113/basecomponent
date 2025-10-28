@@ -1,4 +1,4 @@
-import { Button } from "./Components/Button";
+import { Button } from "https://basecomponent.vercel.app/";
 
 function App() {
   return (
