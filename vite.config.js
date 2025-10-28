@@ -1,15 +1,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import { resolve } from "path";
 
 export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
-      name: "BaseComponents",
-      fileName: (format) => `basecomponents.${format}.js`,
+      entry: resolve(__dirname, "src/index.js"),
+      name: "BaseComp",
       formats: ["es", "umd"],
+      fileName: (format) => `basecomp.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
