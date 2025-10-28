@@ -1,19 +1,8 @@
 {
   "name": "basecomp",
-  "private": false,
-  "version": "0.0.1",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "main": "./dist/basecomp.umd.js",
-  "module": "./dist/basecomp.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/basecomp.es.js",
-      "require": "./dist/basecomp.umd.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
