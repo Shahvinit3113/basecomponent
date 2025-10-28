@@ -1,6 +1,6 @@
 {
-  "builds": [{ "src": "dist/**/*", "use": "@vercel/static" }],
   "routes": [
     { "src": "/basecomponents.js", "dest": "/dist/basecomponents.es.js" }
-  ]
+  ],
+  "cleanUrls": true
 }
