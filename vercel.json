@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "builds": [{ "src": "dist/**/*", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/basecomponents.js", "dest": "/dist/basecomponents.es.js" }
+  ]
 }
